@@ -1,15 +1,15 @@
 import { Router } from "express";
 
-import { AuthenticateClientController } from "./modules/account/authenticateClient/AuthenticateClientController";
-import { AuthenticateDeliverymanController } from "./modules/account/authenticateDeliveryman/AuthenticateDeliverymanController";
+import { AuthenticateClientController } from "./modules/account/useCases/authenticateClient/AuthenticateClientController";
+import { AuthenticateDeliverymanController } from "./modules/account/useCases/authenticateDeliveryman/AuthenticateDeliverymanController";
 import { CreateClientController } from "./modules/clients/useCases/createClient/CreateClientController";
 import { CreateDeliverymanController } from "./modules/deliveryman/useCases/createDeliveryman/CreateDeliverymanController";
-import { CreateDeliveryController } from "./modules/deliveries/createDelivery/CreateDeliveryController";
-import { FindAllAvailableDeliveriesController } from "./modules/deliveries/findAllAvailableDeliveries/FindAllAvailableDeliveriesController";
-import { UpdateDeliverymanController } from "./modules/deliveries/updateDeliveryman/UpdateDeliverymanController";
+import { CreateDeliveryController } from "./modules/deliveries/useCases/createDelivery/CreateDeliveryController";
+import { FindAllAvailableDeliveriesController } from "./modules/deliveries/useCases/findAllAvailableDeliveries/FindAllAvailableDeliveriesController";
+import { UpdateDeliverymanController } from "./modules/deliveries/useCases//updateDeliveryman/UpdateDeliverymanController";
 import { FindAllDeliveriesClientController } from "./modules/clients/useCases/findAllDeliveries/FindAllDeliveriesClientController";
 import { FindAllDeliveriesDeliverymanController } from "./modules/deliveryman/useCases/findAllDeliveries/FindAllDeliveriesDeliverymanController";
-import { UpdateEndDateController } from "./modules/deliveries/updateEndDate/UpdateEndDateController";
+import { UpdateEndDateController } from "./modules/deliveries/useCases//updateEndDate/UpdateEndDateController";
 import { ensureAuthenticateClient } from "./middlewares/ensureAuthenticateClient";
 import { ensureAuthenticateDeliveryman } from "./middlewares/ensureAuthenticateDeliveryman";
 
