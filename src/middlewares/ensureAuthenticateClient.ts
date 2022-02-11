@@ -25,6 +25,4 @@ export async function ensureAuthenticateClient(req: Request, res: Response, next
       message: "Invalid token!"
     })
   }
-
-
 }
